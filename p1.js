@@ -12,6 +12,6 @@ const generate = () => {
                 let num = rand(el.length)
                 phrase += el[num]
             })
-            console.log(phrase)
+            document.querySelector("#result").innerHTML = phrase;
         });
 }
