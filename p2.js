@@ -7,7 +7,7 @@ const iterate = (req, data) => {
             let num = rand(el.length);
             phrase += el[num]
         })
-        document.querySelector("#result").innerHTML += (phrase + "</br>");
+        document.querySelector("#result").innerHTML += (phrase + "</br></br>");
     }
 }
 
