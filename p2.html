@@ -12,7 +12,11 @@
     <div class="card">
         <div id="result"></div>
         <label for="iterations">Entrez le nombre de citations a générer</label>
-        <input type="number" name="iterations" id="iterations">
+        <br>
+        <input type="range" min="1" max="5" name="iterations" onchange="updateValue(this.value)" id="iterations">
+        <br>
+        <span id="value"></span>
+        <br>
         <br>
         <a class="btn" href="#" onclick="start(1)" id="btn1">Citation(s) informatique</a>
         <br>

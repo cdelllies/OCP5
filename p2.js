@@ -1,5 +1,9 @@
 const rand = (num) => { return Math.floor(Math.random() * Math.floor(num)) };
 
+const updateValue = (value) => {
+    document.querySelector("#value").innerHTML = value
+}
+
 const iterate = (req, data) => {
     for (let i = 0; i < req; i++) {
         let phrase = ""
