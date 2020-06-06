@@ -7,12 +7,12 @@ const iterate = (req, data) => {
             let num = rand(el.length);
             phrase += el[num]
         })
-        document.body.innerHTML += (phrase + "</br>");
+        document.querySelector("#result").innerHTML += (phrase + "</br>");
     }
 }
 
 const generate = (iterations, list) => {
-
+    document.querySelector("#result").innerHTML = ""
     fetch(list + '.json')
         .then((response) => {
             return response.json()
@@ -22,5 +22,8 @@ const generate = (iterations, list) => {
         });
 }
 
-generate(2, 1);
+const start = (list) => {
+    let request = document.querySelector('#iterations').value
+    generate(request, list)
+}
 
