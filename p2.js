@@ -12,7 +12,7 @@ const iterate = (req, data) => {
 }
 
 const generate = (iterations, list) => {
-    document.querySelector("#result").innerHTML = ""
+    document.querySelector("#result").innerHTML = "</br>"
     fetch(list + '.json')
         .then((response) => {
             return response.json()
