@@ -11,12 +11,12 @@ const iterate = (req, data) => {
             let num = rand(el.length);
             phrase += el[num]
         })
-        document.querySelector("#result").innerHTML += (phrase + "</br></br>");
+        document.querySelector("#result").innerHTML += (phrase + "<br><br>");
     }
 }
 
 const generate = (iterations, list) => {
-    document.querySelector("#result").innerHTML = "</br>"
+    document.querySelector("#result").innerHTML = "<br>"
     fetch(list + '.json')
         .then((response) => {
             return response.json()
