@@ -10,13 +10,12 @@
 
 <body>
     <div class="card">
-        <h1>Citations configurables</h1>
         <div id="result"></div>
         <label for="iterations">Entrez le nombre de citations a générer</label>
         <br>
-        <input type="range" min="1" max="5" name="iterations" onchange="updateValue(this.value)" id="valueSlider">
+        <input type="range" min="1" max="5" name="iterations" onchange="updateValue(this.value)" id="iterations">
         <br>
-        <input type="number" min="1" max="5" id="valueInput" onchange="updateValue(this.value)" value="3"></span>
+        <span id="value"></span>
         <br>
         <br>
         <a class="btn" href="#" onclick="start(1)" id="btn1">Citation(s) informatique</a>
