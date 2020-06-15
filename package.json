@@ -1,0 +1,23 @@
+{
+  "name": "ocp5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdelllies/OCP5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdelllies/OCP5/issues"
+  },
+  "homepage": "https://github.com/cdelllies/OCP5#readme"
+}

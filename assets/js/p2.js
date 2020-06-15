@@ -30,8 +30,8 @@ class Phrase {
  *      Valeur de l'entrée qui vient d'être modifiée
  */
 const updateValue = (value) => {
-    if(value<0) {
-        value = 0
+    if(value<1) {
+        value = 1
     } else if(value>5) {
         value = 5
     }
@@ -63,10 +63,9 @@ const iterate = (req, data) => {
  *      Numéro du jeu de données a utiliser
  */
 const generate = (list) => {
-    let request = document.querySelector('#valueSlider').value
-    generate(request, list)
+    let iterations = document.querySelector('#valueSlider').value
     document.querySelector("#result").innerHTML = "<br>"
-    fetch(list + '.json')
+    fetch(`/assets/json/${list}.json`)
         .then((response) => {
             return response.json()
         })
