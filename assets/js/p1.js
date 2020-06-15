@@ -20,7 +20,7 @@ const rand = (num) => { return Math.floor(Math.random() * Math.floor(num)) };
  */
 const generate = () => {
 
-    fetch('/assets/json/1.json')
+    fetch('assets/json/1.json')
         .then((response) => {
             return response.json()
         })

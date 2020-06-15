@@ -65,7 +65,7 @@ const iterate = (req, data) => {
 const generate = (list) => {
     let iterations = document.querySelector('#valueSlider').value
     document.querySelector("#result").innerHTML = "<br>"
-    fetch(`/assets/json/${list}.json`)
+    fetch(`assets/json/${list}.json`)
         .then((response) => {
             return response.json()
         })
