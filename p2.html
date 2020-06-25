@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Générateur de citations écrit en JavaScript">
     <title>Citations configurables</title>
 </head>
 
 <body>
-    <div class="card">
+    <article>
         <h1>Citations configurables</h1>
         <div id="result"></div>
         <label for="iterations">Entrez le nombre de citations a générer</label>
         <br>
+        <!-- Quand la valeur du slider ou de l'input change, la valeur est envoyée dans la fonction updateValue() 
+            qui synchronise les deux champs et évite une entrée incorrecte -->
         <input type="range" min="1" max="5" name="iterations" onchange="updateValue(this.value)" id="valueSlider">
         <br>
         <input type="number" min="1" max="5" id="valueInput" onchange="updateValue(this.value)" value="3"></span>
         <br>
         <br>
+        <!-- Quand un des boutons est pressé, appelle la fonction generate(n) avec n comme numéro du jeu de données -->
         <a class="btn" href="#" onclick="generate(1)">Citation(s) informatique</a>
         <br>
         <a class="btn" href="#" onclick="generate(2)">Citation(s) jeux</a>
         <br>
-        <a class="btn" href="./">Retour au menu</a>
-        </div>
+        <a class="btn" href="/">Retour au menu</a>
+    </article>
     <script src="assets/js/p2.js"></script>
 </body>
 
